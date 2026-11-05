@@ -16,6 +16,7 @@ EmotionDetection/
 ├── server.py
 └── requirements.txt
 ```
+
 # Setup and execution
 ```text
 python3 -m venv .venv
@@ -25,4 +26,10 @@ python3 -m unittest test_emotion_detection.py
 python3 server.py
 ```
 
+Open http://localhost:5000 and enter an English sentence. A blank input is handled with a friendly validation message.
+
+# Static analysis
+```text
+pylint server.py EmotionDetection test_emotion_detection.py
+```
 
