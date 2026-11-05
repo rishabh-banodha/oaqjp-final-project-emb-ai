@@ -10,3 +10,12 @@ templates/
 test_emotion_detection.py
 server.py
 requirements.txt
+
+# Setup and execution
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 -m unittest test_emotion_detection.py
+python3 server.py
+
+
